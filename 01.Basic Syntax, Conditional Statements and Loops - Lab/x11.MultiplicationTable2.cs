@@ -1,6 +1,6 @@
 using System;
 
-namespace x10.MultiplicationTable2
+namespace x11.MultiplicationTable2
 {
     internal class Program
     {
