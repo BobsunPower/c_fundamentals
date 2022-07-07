@@ -1,6 +1,6 @@
 using System;
 
-namespace StudentInformation
+namespace x01.StudentInformation
 {
     internal class Program
     {
