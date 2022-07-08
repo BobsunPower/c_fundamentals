@@ -1,6 +1,6 @@
 using System;
 
-namespace x06.Login
+namespace x05.Login
 {
     internal class Program
     {
