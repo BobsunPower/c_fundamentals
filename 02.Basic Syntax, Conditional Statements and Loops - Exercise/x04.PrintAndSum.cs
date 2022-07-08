@@ -1,6 +1,6 @@
 using System;
 
-namespace x05.PrintAndSum
+namespace x04.PrintAndSum
 {
     internal class Program
     {
