@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace x07.Strongnumber
+namespace x06.Strongnumber
 {
     internal class Program
     {
