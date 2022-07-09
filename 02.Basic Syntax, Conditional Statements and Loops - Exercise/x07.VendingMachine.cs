@@ -1,6 +1,6 @@
 using System;
 
-namespace x08.VendingMachine
+namespace x07.VendingMachine
 {
     internal class Program
     {
