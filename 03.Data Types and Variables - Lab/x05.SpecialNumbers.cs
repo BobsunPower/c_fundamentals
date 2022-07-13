@@ -7,10 +7,10 @@ namespace x05.SpecialNumbers
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            for (int i = 1; i <= n; i++) {bool special = false; int sum = 0; int num = i;
+            for (int i = 1; i <= n; i++) {bool spl = false; int sum = 0; int num = i;
                 for (int j = 1; j <= i; j++) {sum += num % 10; num /= 10;}
-                if (sum == 5 || sum == 7 || sum == 11) {special = true;}
-                Console.WriteLine($"{i} -> {special}");
+                if (sum == 5 || sum == 7 || sum == 11) {spl = true;}
+                Console.WriteLine($"{i} -> {spl}");
             }
         }
     }
