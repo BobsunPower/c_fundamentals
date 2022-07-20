@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace x07.MagicSum
+namespace x08.MagicSum
 {
     internal class Program
     {
