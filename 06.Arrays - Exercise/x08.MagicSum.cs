@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace x07.MaxSequenceOfEqualElements
+namespace x08.MagicSum.cs
 {
     internal class Program
     {
