@@ -32,10 +32,6 @@ namespace x09.GreaterOfTwoValues
                     string fstStr = Console.ReadLine(); string sndStr = Console.ReadLine();
                     Console.WriteLine(GetMax(fstStr, sndStr)); break;
             }
-
-        }
-
-        
-
+        }      
     }
 }
