@@ -8,8 +8,7 @@ namespace x06.ListManipulationBasics
     {
         static void Main(string[] args)
         {
-            List<int> nums = Console.ReadLine().Split().Select(int.Parse).ToList();
-            string cmd = Console.ReadLine();
+            List<int> nums = Console.ReadLine().Split().Select(int.Parse).ToList(); string cmd = Console.ReadLine();
             while (cmd != "end") {
                 string[] tkn = cmd.Split(' ');
                 string act = tkn[0];
