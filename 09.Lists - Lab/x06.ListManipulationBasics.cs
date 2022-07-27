@@ -10,8 +10,7 @@ namespace x06.ListManipulationBasics
         {
             List<int> nums = Console.ReadLine().Split().Select(int.Parse).ToList(); string cmd = Console.ReadLine();
             while (cmd != "end") {
-                string[] tkn = cmd.Split(' ');
-                string act = tkn[0];
+                string[] tkn = cmd.Split(' '); string act = tkn[0];
                 if (act == "Add") {int addNum = int.Parse(tkn[1]); nums.Add(addNum);}
                 else if (act == "Remove") {int remNum = int.Parse(tkn[1]); nums.Remove(remNum);}
                 else if (act == "RemoveAt") {int remIdx = int.Parse(tkn[1]); nums.RemoveAt(remIdx);}
