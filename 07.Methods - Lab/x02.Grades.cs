@@ -7,10 +7,8 @@ namespace x02.Grades
         static void Main(string[] args)
         {
             double grade = double.Parse(Console.ReadLine());
-
             PrintInWords(grade);
         }
-
         static void PrintInWords(double g)
         {
             string r = "";
