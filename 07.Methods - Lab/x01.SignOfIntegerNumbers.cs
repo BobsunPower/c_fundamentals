@@ -8,7 +8,6 @@ namespace x01.SignOfIntegerNumbers
         {
             SingOfNumber();
         }
-
         static void SingOfNumber()
         {
             int n = int.Parse(Console.ReadLine());
