@@ -4,6 +4,11 @@ namespace x11.MathOperations
 {
     internal class Program
     {
+        static void Main(string[] args)
+        {
+            int a = int.Parse(Console.ReadLine()); string sign = Console.ReadLine(); int b = int.Parse(Console.ReadLine());
+            Console.WriteLine(Calculate(a, sign, b));
+        }
         static double Calculate(int x, string s, int y)
         {
             double result = 0;
@@ -13,11 +18,6 @@ namespace x11.MathOperations
                 case "*": result = x * y; break;
                 case "/": result = x / y; break;}
             return result;
-        }
-        static void Main(string[] args)
-        {
-            int a = int.Parse(Console.ReadLine()); string sign = Console.ReadLine(); int b = int.Parse(Console.ReadLine());
-            Console.WriteLine(Calculate(a, sign, b));
         }        
     }
 }
