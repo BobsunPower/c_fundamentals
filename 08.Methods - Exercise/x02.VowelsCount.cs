@@ -11,8 +11,8 @@ namespace x02.VowelsCount
         }
         static int VowelCounter(string str)
         {
-            string txt = str.ToLower(); int cnt = 0; char[] vow = new char[] { 'a', 'o', 'e', 'u', 'i' };
-            foreach (char ch in txt) { if (vow.Contains(ch)) { cnt++; } }
+            string txt = str.ToLower(); int cnt = 0; char[] vow = new char[] {'a', 'o', 'e', 'u', 'i'};
+            foreach (char ch in txt) {if (vow.Contains(ch)) {cnt++; }}
             return cnt;
         }        
     }
