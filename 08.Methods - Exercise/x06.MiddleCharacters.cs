@@ -4,6 +4,11 @@ namespace x06.MiddleCharacters
 {
     internal class Program
     {
+        static void Main(string[] args)
+        {
+            string str = Console.ReadLine();
+            Console.WriteLine(MidCharacter(str));
+        }
         static string MidCharacter(string str)
         {
             int idx = str.Length / 2; string res = "";
@@ -11,12 +16,5 @@ namespace x06.MiddleCharacters
             else {res = str[idx].ToString();}
             return res;
         }
-        static void Main(string[] args)
-        {
-            string str = Console.ReadLine();
-            Console.WriteLine(MidCharacter(str));
-        }
-
-        
     }
 }
