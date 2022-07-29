@@ -5,17 +5,25 @@ using System.Linq;
 namespace x11.ArrayManipulator
 {
     internal class Program
-    {     
-
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray(); string[] cmd = Console.ReadLine().Split().ToArray();
+            while (cmd[0] != "end") {
+                if (cmd[0] == "exchange") {arr = ExchangedArray(arr, int.Parse(cmd[1]));}
+                else if (cmd[0] == "min" || cmd[0] == "max") {FindMinMax(arr, cmd[0], cmd[1]);}
+                else if (cmd[0] == "first" || cmd[0] == "last") {FindNumbers(arr, cmd[0], int.Parse(cmd[1]), cmd[2]);}
+                cmd = Console.ReadLine().Split().ToArray();}
+            Console.WriteLine($"[{string.Join(", ", arr)}]");
+        }
         static int[] ExchangedArray(int[] cntArr, int xchIdx)
         {
             if (xchIdx < 0 || xchIdx >= cntArr.Length) {Console.WriteLine("Invalid index"); return cntArr;}
             int[] newArr = new int[cntArr.Length]; int strIdx = 0;
-            for (int i = xchIdx + 1; i < cntArr.Length; i++) {newArr[strIdx] = cntArr[i];strIdx++;}
+            for (int i = xchIdx + 1; i < cntArr.Length; i++) {newArr[strIdx] = cntArr[i]; strIdx++;}
             for (int i = 0; i <= xchIdx; i++) {newArr[strIdx] = cntArr[i]; strIdx++;}
             return newArr;
         }
-
         static void FindMinMax(int[] cntArr, string minMax, string evenOdd)
         {
             int idx = -1; int min = int.MaxValue; int max = int.MinValue; int res = 1;
@@ -27,7 +35,6 @@ namespace x11.ArrayManipulator
             if (idx > -1) Console.WriteLine(idx);
             else Console.WriteLine("No matches");
         }
-
         static void FindNumbers(int[] cntArr, string pos, int n, string evenOrOdd)
         {
             if (n > cntArr.Length) {Console.WriteLine("Invalid count"); return;}
@@ -46,16 +53,6 @@ namespace x11.ArrayManipulator
                     if (cnt == n) break;}
                 nums.Reverse();}
             Console.WriteLine($"[{string.Join(", ", nums)}]");
-        }
-        static void Main(string[] args)
-        {
-            int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray(); string[] cmd = Console.ReadLine().Split().ToArray();
-            while (cmd[0] != "end") {
-                if (cmd[0] == "exchange") {arr = ExchangedArray(arr, int.Parse(cmd[1]));}
-                else if (cmd[0] == "min" || cmd[0] == "max") {FindMinMax(arr, cmd[0], cmd[1]);}
-                else if (cmd[0] == "first" || cmd[0] == "last") {FindNumbers(arr, cmd[0], int.Parse(cmd[1]), cmd[2]);}
-                cmd = Console.ReadLine().Split().ToArray();}
-            Console.WriteLine($"[{string.Join(", ", arr)}]");
         }
     }
 }
