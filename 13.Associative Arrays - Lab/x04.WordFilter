@@ -1,0 +1,14 @@
+using System;
+using System.Linq;
+
+namespace x04.WordFilter
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] words = Console.ReadLine() .Split() .Where(w => w.Length % 2 == 0) .ToArray();
+            foreach (var w in words) {Console.WriteLine(w);}
+        }
+    }
+}
