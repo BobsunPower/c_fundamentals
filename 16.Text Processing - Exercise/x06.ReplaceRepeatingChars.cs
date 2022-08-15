@@ -1,6 +1,6 @@
 using System;
 
-namespace x11.ReplaceRepeatingChars
+namespace x06.ReplaceRepeatingChars
 {
     internal class Program
     {
